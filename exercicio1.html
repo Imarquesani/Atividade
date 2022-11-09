@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Nota Aluno</title>
+   Primeira nota <input id="nota1" type="number"> <br />
+   Segunda  nota <input id="nota2" type="number"> <br />
+   terceira nota <input id="nota3" type="number"> <br />
+   <button onclick="media()">Calcular Media</button>
+
+   <script>
+
+    function media(){
+     var nota1 = parseFloat(document.getElementById("nota1").value);
+     var nota2 = parseFloat(document.getElementById("nota2").value);
+     var nota3 = parseFloat(document.getElementById("nota3").value);
+
+     var media = (nota1 + nota2 + nota3)/3 ;
+
+     if(media >= 6)
+      if(media==10)
+       alert("Aprovado ");
+      else
+       alert("Parabens, aprovado! "+media);
+     else
+      alert("Reprovado!")
+
+    }
+ </script>
+
+ </head>
+</html>

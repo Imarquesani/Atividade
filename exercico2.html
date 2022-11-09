@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05</title>
+</head>
+<body>
+    <h1>Conversor</h1>
+    <button onclick="conversor()">Calcular</button>
+    <div id="rsp"> </div>
+
+    <script>
+        function conversor(){
+            let resposta = confirm("Você deseja converter dolar em real?");
+
+            if(resposta == true){
+                var dolaramer = 5.14
+                let real = prompt("Digite o valor em dolar para converter em real");
+
+                let total = Number(dolaramer) * Number(real);
+
+                document.getElementById("rsp").innerHTML = ("O valor convertido é R$" + total + " em reais.")
+                
+          
+        }
+    }
+    </script>
+</body>
+</html>

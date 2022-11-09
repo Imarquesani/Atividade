@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+    <script>
+        let produto = prompt('Digite o Produto.');
+        let valor = prompt('Digite o valor do Produto.');
+        let Imposto = prompt('Digite a taxa do imposto.');
+        
+        
+        Imposto = (Number(valor) * Number(Imposto)/100);
+        let valorTotal= (Number(Imposto)+Number(valor));
+        
+
+        window.document.write(`Produto: ${produto} </br>`);
+        window.document.write(`Valor: ${valor} </br>`);
+        window.document.write(`Imposto Totais: ${Imposto} </br>`);
+        window.document.write(`Valor Com o Imposto: ${valorTotal} </br>`);
+        
+    </script>
+</body>
+</html>
