@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exercicio 5</title>
+</head>
+<body>
+    
+    <script>
+        let hot= 1;
+        let batata= 0.80;
+        let X= 1.50;
+        let Ham= 1.30;
+        let refri= 1;
+        let Cliente = prompt('digite o nome do Cliente:');
+        let Refrigerante = prompt ('digite a quantidade do Refrigerante:');
+        let Hotdog = prompt ('digite a quantidade do Hotdog:');
+        let Batatafrita = prompt ('digite a quantidade de Batata Frita:');
+        let Xburguer = prompt ('digite a quantidade de Xburguer:');
+        let Hamburguer = prompt ('digite a quantidade do Hamburguer:');
+            
+let R = (Refrigerante * refri)
+let H = (Hotdog * hot)
+let B = (Batatafrita * batata)
+let U = (Xburguer * X)
+let A = (Hamburguer * Ham)
+let total = ((Number(R)+ Number(H) + Number(B) + Number(U) + Number(A)))
+
+window.document.write(`Cliente: ${Cliente} </br>`);
+window.document.write(`Refrigerante: ${Refrigerante} </br>`);
+window.document.write(`HotDog: ${Hotdog} </br>`);
+window.document.write(`Batata Frita: ${Batatafrita} </br>`);
+window.document.write(`Xburgue: ${Xburguer} </br>`);
+window.document.write(`Hamburgue: ${Hamburguer} </br>`);
+window.document.write(`Valor Total: ${total} </br>`);
+
+
+    </script>
+    
+</body>
+</html>

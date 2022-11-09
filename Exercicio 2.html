@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Tempo</title>
+</head>
+<body>
+    <h1>Conversor para segundoos</h1>
+    <button onclick="tempo()">Calcular</button>
+    <div id="rsp"> </div>
+
+    <script>
+        function tempo(){
+            let resposta = confirm("Você deseja converter horas/minutos em segundos?");
+
+            if(resposta == true){
+                
+                let hora = prompt ("Digite as horas:");
+                let minu = prompt("Digite os minutos:");
+                let segu = prompt ("Digite os segundos:");
+            
+                let h = (+ hora * 60);
+                let m = (+ minu * 60);
+                let s = (h * 60)
+                let total = parseInt(s) +parseInt (m) + parseInt(segu);
+                document.getElementById("rsp").innerHTML = ("O total calculado são " + total + "segundos.")
+                
+          
+        }
+    }
+    </script>
+</body>
+</html>

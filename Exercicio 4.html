@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let cliente = prompt('Digite o nome do conrrentista:');
+        let Num = prompt('Digite o Numero da conta:');
+        let Banco = prompt('Digite o nome do Banco:');
+        let Credito = prompt('Digite o valor do Cheque a creditar :');
+        let Debito = prompt('Digite o valor do cheque a debitar:');
+        let Saldo = prompt('Digite o seu saldo:');
+        let Limite = prompt('Digite o seu limite:');
+
+let Saldodis =((Number(Limite) + Number (Saldo) + Number(Credito) ))
+let Saldodisponivel = (Number(Saldodis)- Number (Debito))
+
+window.document.write(`Conta: ${cliente} </br>`);
+window.document.write(`Banco: ${Banco} </br>`);
+window.document.write(`Número da Conta: ${Num} </br>`);
+window.document.write(`Saldo Disponivel: ${Saldodisponivel} </br>`);
+
+    </script>
+
+</body>
+</html>
